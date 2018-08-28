@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MicroservicesExample.Domain.Application\MicroservicesExample.Domain.Application.csproj" />
+    <ProjectReference Include="..\MicroservicesExample.Domain\MicroservicesExample.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

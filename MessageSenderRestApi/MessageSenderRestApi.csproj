@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <DockerTargetOS>Linux</DockerTargetOS>
+    <UserSecretsId>c6835e98-d579-479b-a5eb-79ad2a665802</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.0.1916590" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Persistance\MicroservicesExample.Domain.Persistance.csproj" />
+    <ProjectReference Include="..\Domain.Repository\MicroservicesExample.Domain.Repository.csproj" />
+    <ProjectReference Include="..\MicroservicesExample.Domain.Application\MicroservicesExample.Domain.Application.csproj" />
+    <ProjectReference Include="..\MicroservicesExample.Domain.Infrastructure\MicroservicesExample.Domain.Infrastructure.csproj" />
+    <ProjectReference Include="..\MicroservicesExample.Domain\MicroservicesExample.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
